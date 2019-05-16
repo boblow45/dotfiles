@@ -1,32 +1,34 @@
 [user]
-	name = Cillian O'Brien
-	email = cillian.obrien@analog.com
+    name = Cillian O'Brien
+    email = cillian.obrien@analog.com
 [core]
-	editor = nano
-	symlinks = false
-	autocrlf = true
-	fscache = true
+    editor = nano
+    symlinks = false
+    autocrlf = true
+    fscache = true
 [color]
-	interactive = true
+    interactive = true
 [color "branch"]
-	current = yellow bold
-	local = green bold
-	remote = red bold
+    current = yellow bold
+    local = green bold
+    remote = red bold
 [color "diff"]
-	meta = yellow bold
-	frag = magenta bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
 [color "status"]
-	added = green bold
-	changed = yellow bold
-	untracked = red bold
+    added = green bold
+    changed = yellow bold
+    untracked = red bold
 [help]
-	format = html
+    format = html
 [rebase]
-	autosquash = true
+    autosquash = true
 [alias]
+    donttrack = update-index --assume-unchanged
+    track = update-index --no-assume-unchanged
     addremove = !git r && git add . --all
     aliases = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\ \t => \\2/' | sort
     all = add . --all
