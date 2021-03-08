@@ -1,20 +1,9 @@
-
-###############################################################################
-#                 Settings from Vaughn's .bashrc on GitHub                    #
-###############################################################################
-# aliases
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
-alias cls='clear && ls'
-alias vime='vim +Explore'
-alias fls='nautilus --new-window --browser >/dev/null 2>/dev/null &'
-alias tat='tmux attach -t'
+export PATH=$HOME/.local/bin:$PATH
 
 # git editor settings
-export VISUAL=vim
+export VISUAL=code
 export EDITOR="$VISUAL"
-export GIT_EDITOR=vim
+export GIT_EDITOR=nano
 
 # adding git branch to prompt
 _parse_git_branch() {
