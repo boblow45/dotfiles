@@ -27,6 +27,7 @@
 [rebase]
     autosquash = true
 [alias]
+    pushnew = push -u origin HEAD
     donttrack = update-index --assume-unchanged
     track = update-index --no-assume-unchanged
     addremove = !git r && git add . --all
